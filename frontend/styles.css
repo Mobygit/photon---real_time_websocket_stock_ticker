@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+#stocks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stock-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.stock-card:hover {
+    transform: translateY(-5px);
+}
+
+.stock-symbol {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.stock-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.price-increase {
+    color: #27ae60;
+}
+
+.price-decrease {
+    color: #e74c3c;
+}
+
+.price-neutral {
+    color: #333;
+}
+
+.change-indicator {
+    font-size: 16px;
+    margin-top: 5px;
+}
